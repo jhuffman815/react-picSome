@@ -1,15 +1,27 @@
 import React from "react"
-import Header from "./components/Header"
 import "./App.css"
 import Cart from "./pages/Cart"
 import Photos from "./pages/Photos"
+import Header from "./Header"
+import {Switch, Route} from "react-router-dom"
+
 
 function App() {    
     return (
         <div>
             <Header />
-            <h1>Home Page</h1>
+
+            <Switch>
+                <Route exact path="/">
+                    <Photos />
+                </Route>
+                <Route path="/cart">
+                    <Cart />
+                </Route>
+            </Switch>
         </div>
+
+    
     )
 }
 
