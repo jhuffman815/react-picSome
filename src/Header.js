@@ -9,7 +9,7 @@ function Header() {
                 <h2>Pic Some</h2>
             </Link>
             <Link to="/cart">
-                <i class="ri-shopping-cart-fill"></i>
+                <i className="ri-shopping-cart-fill"></i>
             </Link>
         </header>
     )
