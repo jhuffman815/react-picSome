@@ -26,9 +26,11 @@ function Cart() {
             <h1>Check out</h1>
             {cartItemElements}
             <p className="total-cost">Total: {totalDisplay } </p>
+            { cartItems.length > 0 ?
             <div className="order-button">
                 <button onClick={placeOrder}>{buttonText}</button>
-            </div>
+            </div> :
+            <p>You have no items in your cart.</p>}
         </main>
     )
 }
